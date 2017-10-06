@@ -47,6 +47,12 @@ app.get('/about', (request, response) => {
     });
 });
 
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {
+        pageTitle: 'Projects'
+    });
+});
+
 app.get('/about', (request, response) => {
     response.render('about.hbs', {
         pageHeader: 'We are currently in maintenance mode'
